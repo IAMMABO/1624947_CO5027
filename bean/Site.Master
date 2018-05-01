@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="bean.Site" %>
+
+<!DOCTYPE html>
+<html lang="eng">
+<head runat="server">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <title><asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder></title>
+	
+	<!-- This CSS file is for resetting the CSS and was retrieved from Eric Meyer website
+	http://meyerweb.com/eric/tools/css/reset/v2.0|20110126
+	License: none(public domain)-->
+	<link rel="stylesheet" type="text/css" href="reset.css"/>
+	
+	<!--This is the stylesheet  for the whole website-->
+    <link href="../beancss/master.css" rel="stylesheet" type="text/css"/>
+    <asp:ContentPlaceHolder ID="css" runat ="server">
+
+    </asp:ContentPlaceHolder>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+</head>
+
+<body runat="server">
+<header>
+    <a href="default.aspx"><img src="image/MrBean.png" alt="This is the header image, the logo of Mr Bean Bean Bag Company."/></a><asp:ContentPlaceHolder ID="navigation" runat="server">
+</asp:ContentPlaceHolder>
+    </header>
+   
+<asp:ContentPlaceHolder ID="CPH1" runat ="server">
+
+    </asp:ContentPlaceHolder>
+    
+<footer>
+<table>
+<tr>
+<th>Address:</th>
+<th>Contact/Email:</th>
+<th>Opening hours</th>
+</tr>
+<tr>
+<td>Roof Top, Plaza Abdul Razak</td>
+<td> 2238816</td>
+<td>10AM-10PM</td>
+</tr>
+<tr>
+<td>Jalan Laksamana Abdul Razak</td>
+<td>mrbean@outlook.com</td>
+<td>Mondays-Thursdays</td>
+</tr>
+<tr>
+<td>Bandar Seri Begawan</td></tr>
+<tr>
+<td>
+<p><em class="fa fa-copyright"></em> 2018 By MABO</p></td>
+</tr>
+</table>
+</footer>
+</body>
+</html>

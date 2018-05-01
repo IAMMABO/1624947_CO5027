@@ -1,0 +1,10 @@
+﻿/*TOP IMAGE*/
+header a img {
+    width: 700px;
+    height: 350px;
+    padding-left:500px;
+}
+
+body {
+    background-color: #FFFF66;
+}

@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin_MasterPage.master.cs" Inherits="bean.Admin.Admin_MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="eng">
+<head runat="server">
+	<link rel="icon" href="NBC_images/cover4.ico" type="image/x-icon"/>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	
+	<!-- This CSS file is for resetting the CSS and was retrieved from Eric Meyer website
+	http://meyerweb.com/eric/tools/css/reset/v2.0|20110126
+	License: none(public domain)-->
+	<link rel="stylesheet" type="text/css" href="reset.css"/>
+	
+	<!--This is the stylesheet  for the whole website-->
+    <link href="beancss/master2.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+     <asp:ContentPlaceHolder ID="css" runat ="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server">
+    <form id="form1" runat="server">
+<header>
+    <a href="default.aspx">
+        <img src="../image/MrBean.png" /></a><asp:ContentPlaceHolder ID="navigation" runat="server">
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+</asp:ContentPlaceHolder>
+</header>
+            <asp:ContentPlaceHolder ID="CPH1" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

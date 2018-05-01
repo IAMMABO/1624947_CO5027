@@ -1,0 +1,65 @@
+/*NAVIGATION BAR*/
+nav {
+    text-align: center;
+    position: relative;
+    width: 1848px;
+    height: 100px;
+    background-color: black;
+    padding-top: 10px;
+    padding-left: 48px;
+}
+
+    nav ul li {
+        float: left;
+        width: 225px;
+        height: 40px;
+        list-style: none;
+        font-size: 15px;
+        text-align: left;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+
+    nav li a {
+        color: #97BC17;
+        text-decoration: none;
+        left: 50%;
+        right: 50%;
+        font-size: 30px;
+        font-family: 'Gamja Flower', cursive;
+    }
+
+    nav li .active {
+        color: #800000;
+        text-decoration: underline;
+    }
+
+    nav li a:hover {
+        color: gray;
+    }
+
+form{
+	padding-top:15px;
+}
+
+    form h1 {
+        color: #97BC17;
+        font-size: 30px;
+        font-family: 'Cookie', cursive
+    }
+    form button {
+        font-size:25px;
+        color:black;
+        font-family: 'Cookie', cursive
+    }
+
+#login{
+width:236px;
+padding-left:150px;
+float:left;
+}
+#register{
+width:330px;
+float:right;
+padding-right:100px;
+}
