@@ -53,12 +53,12 @@ form{
         font-family: 'Cookie', cursive
     }
 #login{
-width:236px;
-padding-left:380px;
+width:300px;
+padding-left:450px;
 float:left;
 }
-#register {
+#register{
     width: 330px;
     float: right;
-    padding-right: 350px;
+    padding-right: 500px;
 }

@@ -21,36 +21,51 @@
             <h1>Add Product Here</h1>
             <asp:FormView ID="FormView1" runat="server" Height="104px" OnPageIndexChanging="FormView1_PageIndexChanging" Width="470px" DataKeyNames="Prod_ID" DataSourceID="SqlDataSource" DefaultMode="Insert">
                 <EditItemTemplate>
-                    Prod_ID:
-                    <asp:Label ID="Prod_IDLabel1" runat="server" Text='<%# Eval("Prod_ID") %>' />
-                    <br />
-                    Prod_Name:
-                    <asp:TextBox ID="Prod_NameTextBox" runat="server" Text='<%# Bind("Prod_Name") %>' />
-                    <br />
-                    Prod_Price:
-                    <asp:TextBox ID="Prod_PriceTextBox" runat="server" Text='<%# Bind("Prod_Price") %>' />
-                    <br />
-                    Prod_Quantity:
-                    <asp:TextBox ID="Prod_QuantityTextBox" runat="server" Text='<%# Bind("Prod_Quantity") %>' />
-                    <br />
-                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    <table>
+                        <tr>
+                            <td>Prod_ID:
+                                <asp:Label ID="Prod_IDLabel1" runat="server" Text='<%# Eval("Prod_ID") %>' /></td>
+                        </tr>
+                        <tr>
+                            <td> Prod_Name:
+                                <asp:TextBox ID="Prod_NameTextBox" runat="server" Text='<%# Bind("Prod_Name") %>' /></td>
+                        </tr>
+                        <tr>
+                            <td> Prod_Price:
+                                <asp:TextBox ID="Prod_PriceTextBox" runat="server" Text='<%# Bind("Prod_Price") %>' /></td>
+                        </tr>
+                        <tr>
+                            <td> Prod_Quantity:
+                                <asp:TextBox ID="Prod_QuantityTextBox" runat="server" Text='<%# Bind("Prod_Quantity") %>' /></td>
+                        </tr>
+                        <tr>
+                            <td><asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" /></td>
+                        </tr>
+                    </table>
                 </EditItemTemplate>
                 <InsertItemTemplate>
-                    Prod_ID:
-                    <asp:TextBox ID="Prod_IDTextBox" runat="server" Text='<%# Bind("Prod_ID") %>' />
-                    <br />
-                    Prod_Name:
-                    <asp:TextBox ID="Prod_NameTextBox" runat="server" Text='<%# Bind("Prod_Name") %>' />
-                    <br />
-                    Prod_Price:
-                    <asp:TextBox ID="Prod_PriceTextBox" runat="server" Text='<%# Bind("Prod_Price") %>' />
-                    <br />
-                    Prod_Quantity:
-                    <asp:TextBox ID="Prod_QuantityTextBox" runat="server" Text='<%# Bind("Prod_Quantity") %>' />
-                    <br />
-                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    <table>
+                        <tr>
+                            <td> Prod_ID:
+                    <asp:TextBox ID="Prod_IDTextBox" runat="server" Text='<%# Bind("Prod_ID") %>' /></td>
+                        </tr>
+                   <tr>
+                       <td> Prod_Name:
+                    <asp:TextBox ID="Prod_NameTextBox" runat="server" Text='<%# Bind("Prod_Name") %>' /></td>
+                   </tr>
+                <tr>
+                    <td>  Prod_Price:
+                    <asp:TextBox ID="Prod_PriceTextBox" runat="server" Text='<%# Bind("Prod_Price") %>' /></td>
+                </tr>
+                  <tr>
+                      <td> Prod_Quantity:
+                    <asp:TextBox ID="Prod_QuantityTextBox" runat="server" Text='<%# Bind("Prod_Quantity") %>' /></td>
+                  </tr>
+                   <tr>
+                       <td> <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" /></td>
+                   </tr>                 
                 </InsertItemTemplate>
                 <ItemTemplate>
                     Prod_ID:
