@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="bean.Default" %>
+﻿<%@ Page Title="HOMEPAGE" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="bean.Default" %>
 <asp:Content ID ="Content1" ContentPlaceHolderID="css" runat ="server">
     <link href="../beancss/defaultcss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Do+Hyeon|Permanent+Marker" rel="stylesheet"/>
@@ -21,11 +21,11 @@
     <form id="form1" runat="server">
         <h1>Bring it anywhere you go..</h1>
         <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Repeater1_ItemCommand">
-        <HeaderTemplate></HeaderTemplate>
+        <HeaderTemplate></HeaderTemplate> 
         <ItemTemplate>
             <table>
                 <tr>
-                    <td><a href="<%#Eval("Prod_ID","Product.aspx?Id={0}")%>"><asp:Image ID="Prod_Image" style="width:250px; height:100px;"Imageurl="<%#string.Format("images/{0}.jpg", Eval("Prod_ID")) %>"/></a></td>
+                    <td><a href="<%#Eval("Prod_ID","Product.aspx?Prod_ID={0}")%>"><asp:Image ID="Prod_Image" style="width:250px; height:100px;" ImageUrl='<%#string.Format("Photos/{0}.jpg", Eval("Prod_ID")) %>' runat="server" /></a></td>
                 </tr>
                 <tr>
                     <td><asp:Label ID="Label1" runat="server" Text="Label">Product ID:</asp:Label> <a href="<%#Eval("Prod_ID","Product.aspx?Id={0}")%>"><%#Eval("Prod_ID")%></a></td>

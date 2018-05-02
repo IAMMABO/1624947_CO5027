@@ -2,22 +2,22 @@
 nav {
     text-align: center;
     position: relative;
-    width: 1848px;
+    width: 1824px;
     height: 100px;
     background-color: black;
     padding-top: 10px;
-    padding-left: 48px;
+    padding-left: 80px;
 }
 
     nav ul li {
         float: left;
-        width: 225px;
+        width: 258px;
         height: 40px;
         list-style: none;
         font-size: 15px;
         text-align: left;
         padding-top: 10px;
-        padding-left: 30px;
+        padding-left: 160px;
     }
 
     nav li a {
@@ -55,4 +55,5 @@ p {
 }
 form table tr td {
     font-family: 'Do Hyeon', sans-serif;
+    float: left;
 }

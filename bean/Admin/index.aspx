@@ -11,7 +11,7 @@
 				<li><a href="add.aspx" accesskey="p">ADD</a></li>
 				<li><a href="edit.aspx" accesskey="l">EDIT</a></li>
                 <li><a href="list.aspx" accesskey="c">LIST</a></li>
-				<li><a href="upload.aspx" accesskey="a">UPLOAD</a></li>
+				<li><a href="uploadimages.aspx" accesskey="a">UPLOAD</a></li>
     
 </ul>
     </nav>

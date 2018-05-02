@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="bean.Product" %>
+﻿<%@ Page Title="PRODUCT" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="bean.Product" %>
 <asp:Content ID ="Content2" ContentPlaceHolderID="css" runat ="server">
     <link href="../beancss/productcss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Permanent+Marker" rel="stylesheet"/>
@@ -55,27 +55,25 @@
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
         <ItemTemplate>
-            <table>
-                <tr>
-                    <td><img src="image/<%#Eval("Prod_ID")%>.jpg" width="200" height="200" /></td>
-                </tr>
-                <tr>
-                    <td><asp:Label ID="Label1" runat="server" Text="Label">Product ID:</asp:Label> <a href="<%#Eval("Prod_ID","Product.aspx?Id={0}")%>"><%#Eval("Prod_ID")%></a></td>
-                </tr>
-                <tr>
-                    <td><asp:Label ID="Label5" runat="server" Text="Label">Product Name:</asp:Label> <a href="<%#Eval("Prod_ID","Product.aspx?Id={0}")%>"><%#Eval("Prod_Name")%></a></td>
-                </tr>
-                <tr>
-                    <td><asp:Label ID="Label3" runat="server" Text="Label">Product Price:</asp:Label> <a href="<%#Eval("Prod_ID","Product.aspx?Id={0}")%>">Bnd$<%#Eval("Prod_Price")%></a></td>
-                </tr>
-                <tr>
-                    <td><asp:Label ID="Label4" runat="server" Text="Label">Product Quantity:</asp:Label> <a href="<%#Eval("Prod_ID","Product.aspx?Id={0}")%>"><%#Eval("Prod_Quantity")%></a></td>
-                </tr>
-            </table>
+            Prod_ID:
+            <asp:Label ID="Prod_IDLabel" runat="server" Text='<%# Eval("Prod_ID") %>' />
+            <br />
+            Prod_Name:
+            <asp:Label ID="Prod_NameLabel" runat="server" Text='<%# Bind("Prod_Name") %>' />
+            <br />
+            Prod_Price:
+            <asp:Label ID="Prod_PriceLabel" runat="server" Text='<%# Bind("Prod_Price") %>' />
+            <br />
+            Prod_Quantity:
+            <asp:Label ID="Prod_QuantityLabel" runat="server" Text='<%# Bind("Prod_Quantity") %>' />
+            <br />
         </ItemTemplate>
 
     </asp:FormView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624947_beanbagConnectionString %>" SelectCommand="SELECT * FROM [tbl_products]">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624947_beanbagConnectionString %>" SelectCommand="SELECT * FROM [tbl_products] WHERE ([Prod_ID] = @Prod_ID)" OldValuesParameterFormatString="original_{0}">
+            <SelectParameters>
+                <asp:QueryStringParameter Name="Prod_ID" QueryStringField="Prod_ID" Type="Int32" />
+            </SelectParameters>
         </asp:SqlDataSource>
         <table>
             <tr>

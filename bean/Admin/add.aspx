@@ -11,13 +11,14 @@
 				<li><a class="active" href="add.aspx" accesskey="p">ADD</a></li>
 				<li><a href="edit.aspx" accesskey="l">EDIT</a></li>
                 <li><a href="list.aspx" accesskey="c">LIST</a></li>
-				<li><a href="upload.aspx" accesskey="a">UPLOAD</a></li>
+				<li><a href="uploadimages.aspx" accesskey="a">UPLOAD</a></li>
     
 </ul>
     </nav>
     </asp:content>
         <asp:Content ID ="Content2" ContentPlaceHolderID="CPH1" runat ="server">
-                <h1>Add Product Here</h1>
+            <form id ="form1" runat="server">              
+            <h1>Add Product Here</h1>
             <asp:FormView ID="FormView1" runat="server" Height="104px" OnPageIndexChanging="FormView1_PageIndexChanging" Width="470px" DataKeyNames="Prod_ID" DataSourceID="SqlDataSource" DefaultMode="Insert">
                 <EditItemTemplate>
                     Prod_ID:
@@ -92,5 +93,6 @@
                     <asp:Parameter Name="original_Prod_Quantity" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
+                </form> 
             </asp:Content>
             

@@ -134,9 +134,10 @@
   <ItemGroup>
     <Content Include="Admin\add.aspx" />
     <Content Include="Admin\edit.aspx" />
-    <Content Include="Admin\upload.aspx" />
     <Content Include="Admin\list.aspx" />
-    <Content Include="About.aspx" />
+    <Content Include="Admin\uploadimages.aspx">
+      <BrowseToURL>../Admin/uploadimages.aspx</BrowseToURL>
+    </Content>
     <Content Include="beancss\addcss.css" />
     <Content Include="beancss\editcss.css" />
     <Content Include="beancss\indexcss.css" />
@@ -148,18 +149,6 @@
     <Content Include="beancss\master.css" />
     <Content Include="beancss\master2.css" />
     <Content Include="Contact.aspx" />
-    <Content Include="font\Big_Bottom_Typeface_Normal.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="font\Block_Cartoon.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="font\KBJumpingJellybeans.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="font\mister_tate.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -181,6 +170,7 @@
     <Content Include="image\B9.png" />
     <Content Include="image\MrBean.png" />
     <Content Include="Site.Master" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -189,7 +179,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="beancss\aboutcss.css" />
     <Content Include="beancss\defaultcss.css" />
     <Content Include="beancss\logincss.css" />
     <Content Include="beancss\productcss.css" />
@@ -207,6 +196,13 @@
     <Compile Include="Admin\add.aspx.designer.cs">
       <DependentUpon>add.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\uploadimages.aspx.cs">
+      <DependentUpon>uploadimages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\uploadimages.aspx.designer.cs">
+      <DependentUpon>uploadimages.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin_MasterPage.Master.cs">
       <DependentUpon>Admin_MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -221,13 +217,6 @@
     <Compile Include="Admin\edit.aspx.designer.cs">
       <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\upload.aspx.cs">
-      <DependentUpon>upload.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\upload.aspx.designer.cs">
-      <DependentUpon>upload.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -241,12 +230,6 @@
     </Compile>
     <Compile Include="Admin\list.aspx.designer.cs">
       <DependentUpon>list.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -292,6 +275,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Photos\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -14,7 +14,7 @@ namespace bean.Admin
             string ProdID = Request.QueryString["Prod_ID"];
             string FileName = ProdID + ".jpg";
 
-            currentImage.ImageUrl = "~/Images" + FileName;
+            currentImage.ImageUrl = "~/Photos/" + FileName;
         }
     }
 }

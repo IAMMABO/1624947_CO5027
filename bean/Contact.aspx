@@ -58,16 +58,17 @@
             <tr>
                 <td><script>
                         function initMap() {
-                            var lat = new google.maps.lat(4.9643180209987, 114.97642993927);
-                            var map = {
+                            var lat = new google.maps.lat(4.88588, 114.93177);
+                            var map = new google.maps.Map(document.getElementById("map"),
+                            {
                                 zoom: 18,
                                 center: lat
-                            }
-                            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                            });
+                            
                             var marker = new google.maps.Marker({
                                 position: lat,
+                                map:map
                             });
-                            marker.setMap(map);
                         }
     </script>
     <script async defer src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuOGYizf-FzKlI0gSc-Gwab6Z_3RfQs-c&callback=initMap" type="text/javascript"></script></td>

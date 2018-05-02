@@ -12,9 +12,10 @@ namespace bean
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string Prod_ID = Request.QueryString["Prod_ID"];
-            string filename = Prod_ID + ".jpg";
-            Prod_Image.ImageUrl = "../images" + filename;
+            string ProductID = Request.QueryString["Prod_ID"];
+            string filename = ProductID + ".jpg";
+
+            Prod_Image.ImageUrl = "~/Photos/" + filename;
         }
 
         protected void btnPurchase_Click(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace bean
 
             var config = ConfigManager.Instance.GetProperties();
             var accesstoken = new OAuthTokenCredential(config).GetAccessToken();
-                var apiContext = new APIContext(accesstoken);
+            var apiContext = new APIContext(accesstoken);
 
             var Prod_Item = new Item();
             Prod_Item.name = "Prod_ID";
@@ -65,18 +66,21 @@ namespace bean
             var payment = Payment.Create(apiContext, new Payment
             {
                 intent = "sale",
-                buyer = buyer,
-                transactions = new List<Transaction> { transaction},
+                payer = buyer,
+                transactions = new List<Transaction> { transaction },
                 redirect_urls = redirectUrls
             });
 
-        Session["paymentId"] = payment.id;
-            foreach(var link in payment.links)
+            Session["paymentId"] = payment.id;
+            foreach (var link in payment.links)
             {
-            if(link.rel.ToLower().Trim().Equals("approval_url"))
-        {
-            Response.Redirect(link.href);
-        }
+                if (link.rel.ToLower().Trim().Equals("approval_url"))
+                {
+                    Response.Redirect(link.href);
                 }
-           
+            }
+        }
+    }
+}
+
         

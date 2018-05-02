@@ -19,7 +19,6 @@
     </asp:ContentPlaceHolder>
 </head>
 <body runat="server">
-    <form id="form1" runat="server">
 <header>
     <a href="default.aspx">
         <img src="../image/MrBean.png" /></a><asp:ContentPlaceHolder ID="navigation" runat="server">
@@ -28,6 +27,5 @@
 </header>
             <asp:ContentPlaceHolder ID="CPH1" runat="server">
             </asp:ContentPlaceHolder>
-    </form>
 </body>
 </html>
