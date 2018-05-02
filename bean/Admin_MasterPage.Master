@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="reset.css"/>
 	
 	<!--This is the stylesheet  for the whole website-->
-    <link href="../beancss/master2.css" rel="stylesheet" />
+    <link href="/beancss/master2.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
      <asp:ContentPlaceHolder ID="css" runat ="server">
 
@@ -21,8 +21,8 @@
 <body runat="server">
 <header>
     <a href="default.aspx">
-        <img src="../image/MrBean.png" /></a><asp:ContentPlaceHolder ID="navigation" runat="server">
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+        <img src="../image/MrBean.png" /></a>
+    <asp:ContentPlaceHolder ID="navigation" runat="server">
 </asp:ContentPlaceHolder>
 </header>
             <asp:ContentPlaceHolder ID="CPH1" runat="server">

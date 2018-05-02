@@ -16,10 +16,5 @@ namespace bean.Admin
         {
 
         }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-        }
     }
 }

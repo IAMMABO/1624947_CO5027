@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="css" runat="server">
-     <link href="../beancss/logincss.css" rel="stylesheet" type="text/css"/>
+    <link href="../beancss/logincss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="navigation" runat="server">
@@ -94,5 +94,5 @@
                 </td>
             </tr>           
         </table>
-    </form>
+        </form>
 </asp:Content>

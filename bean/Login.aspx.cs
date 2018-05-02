@@ -8,7 +8,6 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 
-
 namespace bean
 {
     public partial class Login : System.Web.UI.Page
@@ -17,7 +16,6 @@ namespace bean
         {
 
         }
-
         protected void BtnReg_Click(object sender, EventArgs e)
         {
             var identityDBContext = new IdentityDbContext("IdentityConnection");
@@ -87,22 +85,20 @@ namespace bean
             else
             {
                 String userroles = usermanager.GetRoles(user.Id).FirstOrDefault();
-               
-                    if (userroles.Equals("Admin"))
-                    {
-                        Response.Redirect("~/Admin/index.aspx");
-                    }
 
+                if (userroles.Equals("Admin"))
+                {
+                    Response.Redirect(url: "~/Admin/add.aspx");
                 }
 
             }
+
+        }
 
         protected void BtnReset2_Click(object sender, EventArgs e)
         {
             TxtLoginUser.Text = " ";
             TxtLoginPass.Text = " ";
         }
-
-       
     }
 }

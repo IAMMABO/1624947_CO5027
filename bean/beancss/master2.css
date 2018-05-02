@@ -20,3 +20,9 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
+body a{
+    color:red;
+}
+body a:hover{
+    color:gray;
+}
