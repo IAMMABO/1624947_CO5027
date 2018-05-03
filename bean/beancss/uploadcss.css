@@ -45,6 +45,16 @@ section{
     padding-top:20px;
 }
 
+.upload {
+    border-color: Black;
+    border-style: None;
+    color: #97BC17;
+    font-size: 25px;
+    width: 1904px;
+    height: 35px;
+    font-family: 'Gamja Flower', cursive;
+}
+
 /*LOGOUT BUTTON*/
 .logout {
     background-color: Black;

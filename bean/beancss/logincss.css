@@ -64,3 +64,41 @@ form button {
     float: right;
     padding-right: 500px;
 }
+
+.Register {
+    border-color: Black;
+    border-style: None;
+    color: #97BC17;
+    font-size: 25px;
+    width: 1904px;
+    height: 35px;
+    font-family: 'Gamja Flower', cursive;
+}
+.Reset{
+    border-color: Black;
+    border-style: None;
+    color: #97BC17;
+    font-size: 25px;
+    width: 1904px;
+    height: 35px;
+    font-family: 'Gamja Flower', cursive;
+}
+
+.Login {
+    border-color: Black;
+    border-style: None;
+    color: #97BC17;
+    font-size: 25px;
+    width: 1904px;
+    height: 35px;
+    font-family: 'Gamja Flower', cursive;
+}
+.Reset2{
+    border-color: Black;
+    border-style: None;
+    color: #97BC17;
+    font-size: 25px;
+    width: 1904px;
+    height: 35px;
+    font-family: 'Gamja Flower', cursive;
+}

@@ -32,11 +32,6 @@
             <tr>
                 <td><asp:TextBox ID="TxtRegUser" runat="server"></asp:TextBox></td>
             </tr>
-            <tr>
-                <td>
-                    <asp:Label ID="Label6" runat="server" Text="lblerror"></asp:Label>
-                </td>
-            </tr>
        <tr>
            <td><asp:Label ID="Label2" runat="server" Text="Password:"></asp:Label></td>
        </tr>
@@ -53,8 +48,8 @@
                 <td><asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TxtRegConfirmPass" ControlToValidate="TxtRegPassword" ErrorMessage="*Password doesnt match!" ForeColor="Red"></asp:CompareValidator></td>
             </tr>
             <tr>
-                <td><asp:Button ID="BtnReg" runat="server" OnClick="BtnReg_Click" Text="REGISTER" Height="35px"/>
-                    <asp:Button ID="btnReset" runat="server" Text="RESET" OnClick="BtnReset_Click" Height="35px" />
+                <td><asp:Button ID="BtnReg" CssClass="Register" runat="server" OnClick="BtnReg_Click" Text="REGISTER" Height="35px"/>
+                    <asp:Button ID="btnReset" CssClass="Reset" runat="server" Text="RESET" OnClick="BtnReset_Click" Height="35px" />
                 </td>
             </tr>
        <tr>
@@ -89,8 +84,8 @@
                  <td><asp:Literal ID="LitLoginMsg" runat="server"></asp:Literal></td>
             </tr>
             <tr>
-                <td><strong><asp:Button ID="btnLogin" runat="server" Text="LOGIN" OnClick="BtnLogin_Click" /></strong>
-                    <strong><asp:Button ID="btnReset2" runat="server" Text="RESET" OnClick="BtnReset2_Click" /></strong>
+                <td><strong><asp:Button ID="btnLogin" CssClass="Login" runat="server" Text="LOGIN" OnClick="BtnLogin_Click" /></strong>
+                    <strong><asp:Button ID="btnReset2" CssClass="Reset2" runat="server" Text="RESET" OnClick="BtnReset2_Click" /></strong>
                 </td>
             </tr>           
         </table>

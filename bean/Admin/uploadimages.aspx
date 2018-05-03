@@ -21,7 +21,7 @@
          <!--CONTENT TO UPLOAD IMAGE-->
          <section>
         <asp:FileUpload ID="FileUpload1" runat="server" />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+        <asp:Button ID="Button1" CssClass="Upload" runat="server" OnClick="Button1_Click" Text="UPLOAD" />
     </section>
          <asp:Button ID="Button2" CssClass="logout" runat="server" OnClick="Button2_Click" Text="LOGOUT"/>
              </form>

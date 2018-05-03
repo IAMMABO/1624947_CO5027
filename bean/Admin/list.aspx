@@ -28,8 +28,8 @@
                 <asp:BoundField DataField="Prod_Price" HeaderText="Prod_Price" SortExpression="Prod_Price" />
                 <asp:BoundField DataField="Prod_Quantity" HeaderText="Prod_Quantity" SortExpression="Prod_Quantity" />
                 <asp:HyperLinkField DataNavigateUrlFields="Prod_ID" DataNavigateUrlFormatString="uploadimages.aspx?Prod_ID={0}" Text="Upload Image" />
-                <asp:HyperLinkField DataNavigateUrlFields="Prod_ID" DataNavigateUrlFormatString="uploadimages.aspx?Prod_ID={0}" Text="Edit Image" />
-                 <asp:HyperLinkField DataNavigateUrlFields="Prod_ID" DataNavigateUrlFormatString="edit.aspx?Prod_ID={0}" Text="View Produc" />
+                <asp:HyperLinkField DataNavigateUrlFields="Prod_ID" DataNavigateUrlFormatString="edit.aspx?Prod_ID={0}" Text="Edit Image" />
+                 <asp:HyperLinkField DataNavigateUrlFields="Prod_ID" DataNavigateUrlFormatString="edit.aspx?Prod_ID={0}" Text="View Product" />
             </Columns>
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1624947_beanbagConnectionString %>" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [tbl_products]" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [tbl_products] WHERE [Prod_ID] = @original_Prod_ID AND [Prod_Name] = @original_Prod_Name AND [Prod_Price] = @original_Prod_Price AND (([Prod_Quantity] = @original_Prod_Quantity) OR ([Prod_Quantity] IS NULL AND @original_Prod_Quantity IS NULL))" InsertCommand="INSERT INTO [tbl_products] ([Prod_ID], [Prod_Name], [Prod_Price], [Prod_Quantity]) VALUES (@Prod_ID, @Prod_Name, @Prod_Price, @Prod_Quantity)" UpdateCommand="UPDATE [tbl_products] SET [Prod_Name] = @Prod_Name, [Prod_Price] = @Prod_Price, [Prod_Quantity] = @Prod_Quantity WHERE [Prod_ID] = @original_Prod_ID AND [Prod_Name] = @original_Prod_Name AND [Prod_Price] = @original_Prod_Price AND (([Prod_Quantity] = @original_Prod_Quantity) OR ([Prod_Quantity] IS NULL AND @original_Prod_Quantity IS NULL))">
