@@ -43,7 +43,7 @@ namespace bean
                     labelmessage.Enabled = false;
                 }
             }
-            catch(Exception)
+            catch (Exception)
             {
                 //Log - Event Viewer or table
                 labelmessage.ForeColor = System.Drawing.Color.Blue;

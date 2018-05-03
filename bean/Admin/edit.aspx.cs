@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.Owin.Security;
+using Microsoft.Owin.Security.Cookies;
+using Microsoft.AspNet.Identity;
 
 namespace bean.Admin
 {
@@ -15,6 +18,12 @@ namespace bean.Admin
             string FileName = ProdID + ".jpg";
 
             currentImage.ImageUrl = "~/Photos/" + FileName;
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Response.Redirect(url: "~/Default.aspx");
         }
     }
 }

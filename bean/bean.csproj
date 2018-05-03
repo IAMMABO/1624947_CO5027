@@ -142,6 +142,7 @@
     <Content Include="beancss\editcss.css" />
     <Content Include="beancss\listcss.css" />
     <Content Include="beancss\uploadcss.css" />
+    <Content Include="Contact.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Photos\0.jpg" />
     <Content Include="Photos\1.jpg" />
@@ -159,7 +160,6 @@
     <Content Include="beancss\contactcss.css" />
     <Content Include="beancss\master.css" />
     <Content Include="beancss\master2.css" />
-    <Content Include="Contact.aspx" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -234,6 +234,13 @@
     <Compile Include="Admin\list.aspx.designer.cs">
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -247,13 +254,6 @@
     </Compile>
     <Compile Include="Product.aspx.designer.cs">
       <DependentUpon>Product.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

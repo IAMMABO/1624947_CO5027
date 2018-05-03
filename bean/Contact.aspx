@@ -1,12 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="bean.Contact" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="css" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="bean.Contact" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="css" runat="server">
     <!--CSS-->
     <link href="../beancss/contactcss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
 </asp:Content>
-
-<asp:Content ID ="NAV" ContentPlaceHolderID="navigation" runat ="server">
-    <!--NAVIGATION-->
+<asp:Content ID="Content3" ContentPlaceHolderID="navigation" runat="server">
+     <!--NAVIGATION-->
    <nav>
     <ul>
 				<li><a href="Default.aspx" accesskey="h">HOME</a></li>
@@ -16,10 +15,9 @@
     
 </ul>
     </nav>
-    </asp:content>
-
-<asp:Content ID="Content2" ContentPlaceHolderID="CPH1" runat="server">
-    <form id="form1" runat="server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="CPH1" runat="server">
+     <form id="form1" runat="server">
         <!--CONTACT SECTION-->
         <section>
     <table>
@@ -58,25 +56,26 @@
             <tr>
                  <th>WE ARE HERE!</th>
             </tr>
-            <tr>
-                <td><script>
-                        var map;
-                        function initMap() {
-                            map = new google.maps.Map(document.getElementById("map"), {
-                                center: { lat: 4.88588, lng: 114.93177, },
-                                zoom: 18,
-                            });
-                                                       
-                            var marker = new google.maps.Marker({
-                                position: lat,
-                                map:map
-                            });
-                        }
-    </script>
-    <script async defer src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuOGYizf-FzKlI0gSc-Gwab6Z_3RfQs-c&callback=initMap" type="text/javascript"></script></td>
-            </tr>
-
-        </table>
+            </table>
+           
+                <div id="map"></div>
+		<script>
+            function initMap() {
+                var uluru = { lat: 4.885731, lng: 114.931669 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 18,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+		</script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALrsQu2DJPc_byznaZ4igc_Cc4blHP7-U&callback=initMap
+">
+		</script>
             </section>
     </form>
 </asp:Content>

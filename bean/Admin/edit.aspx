@@ -99,5 +99,6 @@
                     <asp:Parameter Name="original_Prod_Quantity" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
+        <asp:Button ID="Button1" CssClass="logout" runat="server" OnClick="Button1_Click" Text="LOGOUT"/>
         </form>
     </asp:Content>

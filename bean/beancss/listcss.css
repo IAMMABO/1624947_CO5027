@@ -45,3 +45,15 @@ form h1 {
 gridview{
     padding-left:450px;
 }
+
+/*LOGOUT BUTTON*/
+.logout {
+    background-color: Black;
+    border-color: Black;
+    border-style: None;
+    color: #97BC17;
+    font-size: 25px;
+    width: 1904px;
+    height: 35px;
+    font-family: 'Gamja Flower', cursive;
+}

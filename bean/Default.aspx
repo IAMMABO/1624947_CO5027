@@ -34,6 +34,7 @@
                <li><asp:Label ID="Label3" runat="server" Text="Label">Product Price:</asp:Label> <a href="<%#Eval("Prod_ID","Product.aspx?Id={0}")%>">Bnd$<%#Eval("Prod_Price")%></a></li>
                 <li><asp:Label ID="Label4" runat="server" Text="Label">Product Quantity:</asp:Label> <a href="<%#Eval("Prod_ID","Product.aspx?Id={0}")%>"><%#Eval("Prod_Quantity")%></a></li>
                    </ul>
+                        </td>
         </ItemTemplate>
         <FooterTemplate></FooterTemplate>
     </asp:Repeater>

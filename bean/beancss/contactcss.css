@@ -60,3 +60,12 @@ section table th {
     color: #97BC17;
     font-size:35px;
 }
+
+#map {
+    width: 500px;
+    height: 510px;
+    border: 1px solid #DEDEDE; /*Gainsboro*/
+    background: #C51D45; /*Maroon Crayola*/
+    margin-left: auto;
+    margin-right: auto;
+}
