@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin_MasterPage.Master" AutoEventWireup="true" CodeBehind="add.aspx.cs" Inherits="bean.Admin.add" %>
 <asp:Content ID ="Content1" ContentPlaceHolderID="css" runat ="server">
+    <!--CSS-->
     <link href="../beancss/addcss.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
     </asp:Content>        
@@ -17,7 +18,8 @@
     </nav>
     </asp:content>
         <asp:Content ID ="Content2" ContentPlaceHolderID="CPH1" runat ="server">
-            <form id ="form1" runat="server">  
+            <form id ="form1" runat="server">
+                <!--CONTENT TO ADD PRODUCT-->
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="LOGOUT" />
             <h1>Add Product Here</h1>
             <asp:FormView ID="FormView1" runat="server" Height="104px" OnPageIndexChanging="FormView1_PageIndexChanging" Width="470px" DataKeyNames="Prod_ID" DataSourceID="SqlDataSource" DefaultMode="Insert">

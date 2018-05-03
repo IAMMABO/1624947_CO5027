@@ -1,9 +1,8 @@
-html, body{
-    height:100%;
-}
-html{
-    display:table;
-    margin:auto;
+/*HTML*/
+html {
+    display: table;
+    margin: auto;
+    height: 100%;
 }
 
 /*TOP IMAGE*/
@@ -15,31 +14,34 @@ header img{
     display:block;
 }
 
-body{
-background-color: #FFe63b;
-display:table-cell;
-vertical-align:middle;
+/*BODY*/
+body {
+    background-color: #FFe63b;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
 }
 
+/*FOOTER*/
 footer {
     padding-top: 20px;
     width: 1825px;
 }
-    footer table {
-        width: 1825px;
-        padding-left: 135px;
-        background-color: #97BC17;
-    }
-    footer table th {
-        text-align: left;
-        font-size:35px;
-        font-family: 'Reenie Beanie', cursive;
-    }
-    footer table tr td {
-        color: black;
-        font-size: 30px;
-        font-family: 'Reenie Beanie', cursive;
-    }
-    footer p {
-        font-family: 'Reenie Beanie', cursive;
-    }
+footer table {
+    width: 1825px;
+    padding-left: 135px;
+    background-color: #97BC17;
+}
+footer table th {
+    text-align: left;
+    font-size:35px;
+    font-family: 'Reenie Beanie', cursive;
+}
+footer table tr td {
+    color: black;
+    font-size: 30px;
+    font-family: 'Reenie Beanie', cursive;
+}
+footer p {
+    font-family: 'Reenie Beanie', cursive;
+}

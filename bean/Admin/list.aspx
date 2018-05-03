@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin_MasterPage.Master" AutoEventWireup="true" CodeBehind="list.aspx.cs" Inherits="bean.Admin.list" %>
 <asp:Content ID ="Content2" ContentPlaceHolderID="css" runat ="server">
+    <!--CSS-->
     <link href="../beancss/listcss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
     </asp:Content>
@@ -18,6 +19,7 @@
     </asp:content>
 <asp:Content ID ="Content1" ContentPlaceHolderID="CPH1" runat ="server">
     <form id ="form1" runat = "server">
+        <!--LIST OF PRODUCTS-->
             <h1>List Product Here</h1>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="Prod_ID" DataSourceID="SqlDataSource1" Width="540px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>

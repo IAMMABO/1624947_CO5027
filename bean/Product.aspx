@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="PRODUCT" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="bean.Product" %>
 <asp:Content ID ="Content2" ContentPlaceHolderID="css" runat ="server">
+    <!--CSS-->
     <link href="../beancss/productcss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Permanent+Marker" rel="stylesheet"/>
     </asp:Content>
@@ -19,6 +20,7 @@
 
 <asp:Content ID ="Content1" ContentPlaceHolderID="CPH1" runat ="server">
     <form id="form1" runat="server">
+        <!--PRODUCT DETAILS-->
     <h1>Choose your bean bag!</h1>
         <asp:Image ID="Prod_Image" runat="server" style="width:250px; height:150px;" />
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="Prod_ID" DataSourceID="SqlDataSource1">

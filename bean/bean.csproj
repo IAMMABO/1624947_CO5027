@@ -144,6 +144,18 @@
     <Content Include="beancss\listcss.css" />
     <Content Include="beancss\uploadcss.css" />
     <Content Include="Login.aspx" />
+    <Content Include="Photos\0.jpg" />
+    <Content Include="Photos\1.jpg" />
+    <Content Include="Photos\10.jpg" />
+    <Content Include="Photos\11.jpg" />
+    <Content Include="Photos\2.jpg" />
+    <Content Include="Photos\3.jpg" />
+    <Content Include="Photos\4.jpg" />
+    <Content Include="Photos\5.jpg" />
+    <Content Include="Photos\6.jpg" />
+    <Content Include="Photos\7.jpg" />
+    <Content Include="Photos\8.jpg" />
+    <Content Include="Photos\9.jpg" />
     <Content Include="Product.aspx" />
     <Content Include="beancss\contactcss.css" />
     <Content Include="beancss\master.css" />
@@ -275,7 +287,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Photos\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="bean.Login" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
-</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="css" runat="server">
+    <!--CSS-->
     <link href="../beancss/logincss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
 </asp:Content>
@@ -19,6 +18,7 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="CPH1" runat="server">
     <form id="form1" runat="server">
+        <!--REGISTER-->
         <table id ="register">
             <tr>
                 <td><h1>Register Account</h1></td>
@@ -64,7 +64,7 @@
             </table>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-       
+       <!--LOGIN-->
         <table id ="login">
              <tr>
                 <td><h1>LOGIN:</h1></td>

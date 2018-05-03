@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin_MasterPage.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="bean.Admin.index" %>
 <asp:Content ID ="Content1" ContentPlaceHolderID="css" runat ="server">
+    <!--CSS-->
     <link href="../beancss/indexcss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
     </asp:Content>

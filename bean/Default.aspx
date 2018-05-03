@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="HOMEPAGE" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="bean.Default" %>
 <asp:Content ID ="Content1" ContentPlaceHolderID="css" runat ="server">
+    <!--CSS-->
     <link href="../beancss/defaultcss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Do+Hyeon|Permanent+Marker" rel="stylesheet"/>
     </asp:Content>
@@ -19,6 +20,7 @@
 
 <asp:Content ID ="Content2" ContentPlaceHolderID="CPH1" runat ="server">
     <form id="form1" runat="server">
+        <!--LIST OF PRODUCTS-->
         <h1>Bring it anywhere you go..</h1>
         <table>
             <tr>
@@ -42,6 +44,7 @@
             <asp:QueryStringParameter DefaultValue="1" Name="Prod_Quantity" QueryStringField="Prod_Quantity" Type="Int32" />
         </SelectParameters>
         </asp:SqlDataSource>
+        <!--DESCRIPTION-->
   <h2> Details:</h2>
   <p>• It is made out of High grade PVC Leatherette Fabric.VC Leatherette Fabric.</p>
   <p>• It is filled with a High Density Polystyrene Beans.</p>

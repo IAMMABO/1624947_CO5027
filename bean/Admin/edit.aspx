@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Edit" Language="C#" MasterPageFile="~/Admin_MasterPage.Master" AutoEventWireup="true" CodeBehind="edit.aspx.cs" Inherits="bean.Admin.edit" %>
 <asp:Content ID ="Content1" ContentPlaceHolderID="css" runat ="server">
+    <!--CSS-->
     <link href="../beancss/editcss.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
     </asp:Content>
@@ -18,6 +19,7 @@
     </asp:content>
 <asp:Content ID ="Content2" ContentPlaceHolderID="CPH1" runat ="server">
     <form id = "form1" runat = "server">
+        <!--CONTENT TO EDIT PRODUCT-->
         <h1>Edit Product Here</h1>
             <asp:Image ID="currentImage" runat="server" />
        

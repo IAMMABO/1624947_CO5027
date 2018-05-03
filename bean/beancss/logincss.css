@@ -9,53 +9,55 @@ nav {
     padding-left: 80px;
 }
 
-    nav ul li {
-        float: left;
-        width: 258px;
-        height: 40px;
-        list-style: none;
-        font-size: 15px;
-        text-align: left;
-        padding-top: 10px;
-        padding-left: 160px;
-    }
+nav ul li {
+    float: left;
+    width: 258px;
+    height: 40px;
+    list-style: none;
+    font-size: 15px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 160px;
+}
 
-    nav li a {
-        color: #97BC17;
-        text-decoration: none;
-        left: 50%;
-        right: 50%;
-        font-size: 30px;
-        font-family: 'Gamja Flower', cursive;
-    }
+nav li a {
+    color: #97BC17;
+    text-decoration: none;
+    left: 50%;
+    right: 50%;
+    font-size: 30px;
+    font-family: 'Gamja Flower', cursive;
+}
 
-    nav li .active {
-        color: #800000;
-        text-decoration: underline;
-    }
+nav li .active {
+    color: #800000;
+    text-decoration: underline;
+}
 
-    nav li a:hover {
-        color: gray;
-    }
+nav li a:hover {
+    color: gray;
+}
 
+/*CONTENT*/
 form{
 	padding-top:15px;
 }
 
-    form h1 {
-        color: #97BC17;
-        font-size: 30px;
-        font-family: 'Cookie', cursive
-    }
-    form button {
-        font-size:25px;
-        color:black;
-        font-family: 'Cookie', cursive
-    }
+form h1 {
+    color: #97BC17;
+    font-size: 30px;
+    font-family: 'Cookie', cursive
+}
+form button {
+    font-size:25px;
+    color:black;
+    font-family: 'Cookie', cursive
+}
+
 #login{
-width:300px;
-padding-left:450px;
-float:left;
+    width:300px;
+    padding-left:450px;
+    float:left;
 }
 #register{
     width: 330px;

@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="bean.Contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="css" runat="server">
+    <!--CSS-->
     <link href="../beancss/contactcss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
 </asp:Content>
@@ -19,6 +20,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="CPH1" runat="server">
     <form id="form1" runat="server">
+        <!--CONTACT SECTION-->
         <section>
     <table>
         <tr>
@@ -50,6 +52,7 @@
             </tr>
         </table>
             </section>
+        <!--MAP-->
         <section>
         <table>
             <tr>
@@ -57,14 +60,13 @@
             </tr>
             <tr>
                 <td><script>
+                        var map;
                         function initMap() {
-                            var lat = new google.maps.lat(4.88588, 114.93177);
-                            var map = new google.maps.Map(document.getElementById("map"),
-                            {
+                            map = new google.maps.Map(document.getElementById("map"), {
+                                center: { lat: 4.88588, lng: 114.93177, },
                                 zoom: 18,
-                                center: lat
                             });
-                            
+                                                       
                             var marker = new google.maps.Marker({
                                 position: lat,
                                 map:map
