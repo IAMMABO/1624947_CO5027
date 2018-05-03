@@ -8,7 +8,6 @@
         <!--NAVIGATION-->
    <nav>
     <ul>
-				<li><a href="index.aspx" accesskey="h">MENU</a></li>
 				<li><a href="add.aspx" accesskey="p">ADD</a></li>
 				<li><a href="edit.aspx" accesskey="l">EDIT</a></li>
                 <li><a href="list.aspx" accesskey="c">LIST</a></li>

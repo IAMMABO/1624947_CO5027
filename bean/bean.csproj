@@ -140,7 +140,6 @@
     </Content>
     <Content Include="beancss\addcss.css" />
     <Content Include="beancss\editcss.css" />
-    <Content Include="beancss\indexcss.css" />
     <Content Include="beancss\listcss.css" />
     <Content Include="beancss\uploadcss.css" />
     <Content Include="Login.aspx" />
@@ -167,7 +166,6 @@
     <Content Include="Admin_MasterPage.Master" />
     <Content Include="Admin\Web.config1" />
     <None Include="packages.config" />
-    <Content Include="Admin\index.aspx" />
     <Content Include="image\B1.png" />
     <Content Include="image\B10.png" />
     <Content Include="image\B11.png" />
@@ -228,13 +226,6 @@
     </Compile>
     <Compile Include="Admin\edit.aspx.designer.cs">
       <DependentUpon>edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\list.aspx.cs">
       <DependentUpon>list.aspx</DependentUpon>
