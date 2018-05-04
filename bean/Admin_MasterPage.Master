@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin_MasterPage.master.cs" Inherits="bean.Admin.Admin_MasterPage" %>
 
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head runat="server">
 	<link rel="icon" href="NBC_images/cover4.ico" type="image/x-icon"/>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
@@ -17,7 +17,7 @@
 <body runat="server">
 <header>
     <a href="default.aspx">
-        <img src="../image/MrBean.png" /></a>
+        <img src="../image/MrBean.png" alt="This is the header image, the logo of Mr Bean Bean Bag Company."/></a>
     <asp:ContentPlaceHolder ID="navigation" runat="server">
 </asp:ContentPlaceHolder>
 </header>

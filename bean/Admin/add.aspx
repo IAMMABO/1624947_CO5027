@@ -70,7 +70,8 @@
                    <tr>
                        <td> <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                     &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" /></td>
-                   </tr>                 
+                   </tr> 
+                        </table>
                 </InsertItemTemplate>
                 <ItemTemplate>
                     Prod_ID:
