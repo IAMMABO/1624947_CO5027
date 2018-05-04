@@ -32,7 +32,7 @@
         
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="Prod_ID" DataSourceID="SqlDataSource1">
         <EditItemTemplate>
-            <table>
+            <table id="formview">
                 <tr>
                     <td> Prod_ID:
             <asp:Label ID="Prod_IDLabel1" runat="server" Text='<%# Eval("Prod_ID") %>' /></td>
@@ -55,7 +55,7 @@
         </EditItemTemplate>
         
         <InsertItemTemplate>
-            <table>
+            <table id ="formview2">
                 <tr>
                     <td> Prod_ID:
             <asp:TextBox ID="Prod_IDTextBox" runat="server" Text='<%# Bind("Prod_ID") %>' /></td>
@@ -79,7 +79,7 @@
                 
         
         <ItemTemplate>
-            <table>
+            <table id ="formview3">
                 <tr>
                     <td> Prod_ID:
             <asp:Label ID="Prod_IDLabel" runat="server" Text='<%# Eval("Prod_ID") %>' /></td>
@@ -105,7 +105,7 @@
                 <asp:QueryStringParameter Name="Prod_ID" QueryStringField="Prod_ID" Type="Int32" />
             </SelectParameters>
         </asp:SqlDataSource>
-        <table>
+        <table id="formview4">
             <tr>
                 <td><asp:Label ID="Label1" runat="server" Text="Quantity"></asp:Label>
         <asp:DropDownList ID="DropDownList1" runat="server">
@@ -124,7 +124,7 @@
             <asp:ListItem>PURPLE</asp:ListItem>
             <asp:ListItem>BLACK</asp:ListItem>
             <asp:ListItem>CYAN</asp:ListItem>
-            <asp:ListItem>PRINK</asp:ListItem>
+            <asp:ListItem>PINK</asp:ListItem>
         </asp:DropDownList></td>
             </tr>
             <tr>

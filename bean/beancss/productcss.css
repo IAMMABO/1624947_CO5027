@@ -47,10 +47,10 @@ h1 {
     font-family: 'Permanent Marker', cursive;
 }
 
-table {
+form table {
     padding-left: 400px;
 }
-table tr td {
+form table tr td {
         font-family: 'Do Hyeon', sans-serif;
         font-size: 25px;
         padding-left: 400px;
