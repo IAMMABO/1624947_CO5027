@@ -1,8 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin_MasterPage.Master" AutoEventWireup="true" CodeBehind="add.aspx.cs" Inherits="bean.Admin.add" %>
+﻿<%@ Page Title="ADD" Language="C#" MasterPageFile="~/Admin_MasterPage.Master" AutoEventWireup="true" CodeBehind="add.aspx.cs" Inherits="bean.Admin.add" %>
+<asp:Content ID="Title" ContentPlaceHolderID="title" runat="server">
+    ADD
+</asp:Content>
 <asp:Content ID ="Content1" ContentPlaceHolderID="css" runat ="server">
     <!--CSS-->
     <link href="../beancss/addcss.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet"/>
     </asp:Content>        
 <asp:Content ID ="NAV" ContentPlaceHolderID="navigation" runat ="server">
     <!--NAVIGATION-->

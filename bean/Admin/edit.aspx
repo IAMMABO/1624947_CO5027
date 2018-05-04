@@ -1,4 +1,7 @@
 ﻿<%@ Page Title="Edit" Language="C#" MasterPageFile="~/Admin_MasterPage.Master" AutoEventWireup="true" CodeBehind="edit.aspx.cs" Inherits="bean.Admin.edit" %>
+<asp:Content ID="Title" ContentPlaceHolderID="title" runat="server">
+    EDIT
+</asp:Content>
 <asp:Content ID ="Content1" ContentPlaceHolderID="css" runat ="server">
     <!--CSS-->
     <link href="../beancss/editcss.css" rel="stylesheet" />
@@ -87,7 +90,7 @@
                     <asp:Parameter Name="Prod_Quantity" Type="Int32" />
                 </InsertParameters>
                 <SelectParameters>
-                    <asp:QueryStringParameter DefaultValue="0" Name="Prod_ID" QueryStringField="ProdID" Type="Int32" />
+                    <asp:QueryStringParameter Name="Prod_ID" QueryStringField="Prod_ID" Type="Int32" />
                 </SelectParameters>
                 <UpdateParameters>
                     <asp:Parameter Name="Prod_Name" Type="String" />

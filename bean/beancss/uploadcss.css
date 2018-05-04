@@ -45,24 +45,22 @@ section{
     padding-top:20px;
 }
 
-.upload {
+.Upload {
     border-color: Black;
     border-style: None;
     color: #97BC17;
     font-size: 25px;
-    width: 1904px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
     font-family: 'Gamja Flower', cursive;
 }
 
 /*LOGOUT BUTTON*/
 .logout {
-    background-color: Black;
-    border-color: Black;
+    background-color: #FFe63b;
+    border-color: None;
     border-style: None;
     color: #97BC17;
-    font-size: 25px;
-    width: 1904px;
-    height: 35px;
+    font-size: 40px;
     font-family: 'Gamja Flower', cursive;
 }

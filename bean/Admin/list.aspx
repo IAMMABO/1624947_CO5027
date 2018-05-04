@@ -1,4 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin_MasterPage.Master" AutoEventWireup="true" CodeBehind="list.aspx.cs" Inherits="bean.Admin.list" %>
+﻿<%@ Page Title="LIST" Language="C#" MasterPageFile="~/Admin_MasterPage.Master" AutoEventWireup="true" CodeBehind="list.aspx.cs" Inherits="bean.Admin.list" %>
+<asp:Content ID="Title" ContentPlaceHolderID="title" runat="server">
+    LIST
+</asp:Content>
 <asp:Content ID ="Content2" ContentPlaceHolderID="css" runat ="server">
     <!--CSS-->
     <link href="../beancss/listcss.css" rel="stylesheet" type="text/css"/>
@@ -20,15 +23,14 @@
     <form id ="form1" runat = "server">
         <!--LIST OF PRODUCTS-->
             <h1>List Product Here</h1>
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="Prod_ID" DataSourceID="SqlDataSource1" Width="540px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+        <asp:GridView ID="GridView1" CssClass="GV" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="Prod_ID" DataSourceID="SqlDataSource1" Width="540px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True"/>
                 <asp:BoundField DataField="Prod_ID" HeaderText="Prod_ID" ReadOnly="True" SortExpression="Prod_ID" />
                 <asp:BoundField DataField="Prod_Name" HeaderText="Prod_Name" SortExpression="Prod_Name" />
                 <asp:BoundField DataField="Prod_Price" HeaderText="Prod_Price" SortExpression="Prod_Price" />
                 <asp:BoundField DataField="Prod_Quantity" HeaderText="Prod_Quantity" SortExpression="Prod_Quantity" />
-                <asp:HyperLinkField DataNavigateUrlFields="Prod_ID" DataNavigateUrlFormatString="uploadimages.aspx?Prod_ID={0}" Text="Upload Image" />
-                <asp:HyperLinkField DataNavigateUrlFields="Prod_ID" DataNavigateUrlFormatString="edit.aspx?Prod_ID={0}" Text="Edit Image" />
+                <asp:HyperLinkField DataNavigateUrlFields="Prod_ID" DataNavigateUrlFormatString="uploadimages.aspx?Prod_ID={0}" Text="Upload/Re-upload Image" />
                  <asp:HyperLinkField DataNavigateUrlFields="Prod_ID" DataNavigateUrlFormatString="edit.aspx?Prod_ID={0}" Text="View Product" />
             </Columns>
         </asp:GridView>

@@ -1,7 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="bean.Contact" %>
+﻿<%@ Page Title="CONTACT" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="bean.Contact" %>
+<asp:Content ID="Title" ContentPlaceHolderID="title" runat="server">
+    CONTACT
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="css" runat="server">
     <!--CSS-->
-    <link href="../beancss/contactcss.css" rel="stylesheet" type="text/css"/>
+    <link href="/beancss/contactcss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="navigation" runat="server">
@@ -40,7 +43,7 @@
         <td><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Write a message please.." ControlToValidate="txtmessage" Text="*" ForeColor="Orange"></asp:RequiredFieldValidator></td>
         </tr>
         <tr>
-            <td><asp:Button ID="Button1" runat="server" Text="SUBMIT" OnClick="Button1_Click" /></td>
+            <td><asp:Button ID="Button1" CssClass="submit" runat="server" Text="SUBMIT" OnClick="Button1_Click" /></td>
         </tr>
         <tr>
         <td><asp:ValidationSummary ID="ValidationSummary1" HeaderText="Please fix the following errors" ForeColor="Red" runat="server" /></td>

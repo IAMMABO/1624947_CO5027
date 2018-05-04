@@ -1,15 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="bean.Site" %>
 
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head runat="server">
 	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-    <title><asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder></title>
-	
-	<!-- This CSS file is for resetting the CSS and was retrieved from Eric Meyer website
-	http://meyerweb.com/eric/tools/css/reset/v2.0|20110126
-	License: none(public domain)-->
-	<link rel="stylesheet" type="text/css" href="reset.css"/>
+   <title><asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder></title>
 	
 	<!--This is the stylesheet  for the whole website-->
     <link href="/beancss/master.css" rel="stylesheet" type="text/css"/>

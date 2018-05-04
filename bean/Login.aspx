@@ -1,8 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="bean.Login" %>
+﻿<%@ Page Title="LOGIN" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="bean.Login" %>
+<asp:Content ID="Title" ContentPlaceHolderID="title" runat="server">
+    LOGIN
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="css" runat="server">
     <!--CSS-->
-    <link href="../beancss/logincss.css" rel="stylesheet" type="text/css"/>
+    <link href="/beancss/logincss.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet"/>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="navigation" runat="server">
      <!--NAVIGATION-->
@@ -24,7 +28,6 @@
                 <td><h1>Register Account</h1></td>
                 </tr>
             <tr>
-
                 <td>
                     <asp:Label ID="Label1" runat="server" Text="Username:"></asp:Label>
                 </td>
@@ -48,8 +51,7 @@
                 <td><asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TxtRegConfirmPass" ControlToValidate="TxtRegPassword" ErrorMessage="*Password doesnt match!" ForeColor="Red"></asp:CompareValidator></td>
             </tr>
             <tr>
-                <td><asp:Button ID="BtnReg" CssClass="Register" runat="server" OnClick="BtnReg_Click" Text="REGISTER" Height="35px"/>
-                    <asp:Button ID="btnReset" CssClass="Reset" runat="server" Text="RESET" OnClick="BtnReset_Click" Height="35px" />
+                <td><asp:Button ID="BtnReg" CssClass="Register" runat="server" OnClick="BtnReg_Click" Text="REGISTER"/></td><td><asp:Button ID="btnReset" CssClass="Reset" runat="server" Text="RESET" OnClick="BtnReset_Click" />
                 </td>
             </tr>
        <tr>
@@ -64,9 +66,6 @@
              <tr>
                 <td><h1>LOGIN:</h1></td>
                 </tr>
-            <tr>
-                <td></td>
-            </tr>
             <tr>
                  <td><asp:Label ID="Label4" runat="server" Text="Username:"></asp:Label></td>
             </tr>
@@ -84,9 +83,7 @@
                  <td><asp:Literal ID="LitLoginMsg" runat="server"></asp:Literal></td>
             </tr>
             <tr>
-                <td><strong><asp:Button ID="btnLogin" CssClass="Login" runat="server" Text="LOGIN" OnClick="BtnLogin_Click" /></strong>
-                    <strong><asp:Button ID="btnReset2" CssClass="Reset2" runat="server" Text="RESET" OnClick="BtnReset2_Click" /></strong>
-                </td>
+                <td><asp:Button ID="btnLogin" CssClass="Login" runat="server" Text="LOGIN" OnClick="BtnLogin_Click" /></td><td><asp:Button ID="btnReset2" CssClass="Reset2" runat="server" Text="RESET" OnClick="BtnReset2_Click" /></td>
             </tr>           
         </table>
         </form>

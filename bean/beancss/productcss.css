@@ -47,7 +47,28 @@ h1 {
     font-family: 'Permanent Marker', cursive;
 }
 
-form table tr td {
-    font-family: 'Do Hyeon', sans-serif;
-    float: left;
+table {
+    padding-left: 400px;
+}
+table tr td {
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 25px;
+        padding-left: 400px;
+}
+
+.productimage {
+    padding-top:20px;
+    padding-left: 800px;
+}
+
+/*BUTTON*/
+.buy {
+    border-color: Black;
+    background-color: gray;
+    border-style: None;
+    color: #97BC17;
+    font-size: 25px;
+    width: 100px;
+    height: 40px;
+    font-family: 'Gamja Flower', cursive;
 }

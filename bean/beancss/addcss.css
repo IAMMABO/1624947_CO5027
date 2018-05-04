@@ -46,14 +46,17 @@ form h1 {
     color: #97BC17;
 }
 
+table tr td {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25px;
+}
+
 /*LOGOUT BUTTON*/
 .logout {
-    background-color: Black;
-    border-color: Black;
+    background-color: #FFe63b;
+    border-color: None;
     border-style: None;
     color: #97BC17;
-    font-size: 25px;
-    width: 1904px;
-    height: 35px;
+    font-size: 40px;
     font-family: 'Gamja Flower', cursive;
 }

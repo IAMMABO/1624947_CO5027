@@ -65,40 +65,48 @@ form button {
     padding-right: 500px;
 }
 
+form table tr td {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
 .Register {
     border-color: Black;
+    background-color: gray;
     border-style: None;
     color: #97BC17;
     font-size: 25px;
-    width: 1904px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
     font-family: 'Gamja Flower', cursive;
 }
-.Reset{
+.Reset {
     border-color: Black;
+    background-color: gray;
     border-style: None;
     color: #97BC17;
     font-size: 25px;
-    width: 1904px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
     font-family: 'Gamja Flower', cursive;
 }
 
 .Login {
     border-color: Black;
+    background-color:gray;
     border-style: None;
     color: #97BC17;
     font-size: 25px;
-    width: 1904px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
     font-family: 'Gamja Flower', cursive;
 }
-.Reset2{
+.Reset2 {
     border-color: Black;
+    background-color: gray;
     border-style: None;
     color: #97BC17;
     font-size: 25px;
-    width: 1904px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
     font-family: 'Gamja Flower', cursive;
 }

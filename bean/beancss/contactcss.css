@@ -38,27 +38,37 @@ nav li a:hover {
     color: gray;
 }
 
+/*FORM*/
+form {
+    padding-top: 20px;
+}
+
 /*CONTENT*/
 form section {
     float: left;
+    padding-left:340px;
 }
-form section section {
-    float: right;
-}
-section{
-    padding-top:40px;
-}
-section table{
+    form section section {
+        float: right;
+        padding-left: 300px;
+    }
+section table {
     border: 3px solid black;
-    width:90%;
-    margin-left:auto;
-    margin-right:auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 section table th {
     text-align: center;
     font-family: 'Gamja Flower', cursive;
     color: #97BC17;
     font-size:35px;
+}
+
+table tr td {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 25px;
 }
 
 #map {
@@ -68,4 +78,16 @@ section table th {
     background: #C51D45; /*Maroon Crayola*/
     margin-left: auto;
     margin-right: auto;
+}
+
+/*BUTTON*/
+.submit {
+    border-color: Black;
+    background-color: gray;
+    border-style: None;
+    color: #97BC17;
+    font-size: 25px;
+    width: 100px;
+    height: 40px;
+    font-family: 'Gamja Flower', cursive;
 }

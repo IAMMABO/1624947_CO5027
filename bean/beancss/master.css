@@ -24,11 +24,10 @@ body {
 
 /*FOOTER*/
 footer {
-    padding-top: 20px;
-    width: 1825px;
+    padding-top: 30px;
 }
 footer table {
-    width: 1825px;
+    width: 1904px;
     padding-left: 135px;
     background-color: #97BC17;
 }
